@@ -11,13 +11,13 @@ file_urls = ["https://wwwn.cdc.gov/Nchs/Nhanes/" + str(k) + '-' +
             for (k, j) in (zip(range(2011, 2018, 2), cohorts_set))]
 
 Demo_cohorts = ["DEMO_" + cohort for cohort in cohorts_set]
-Demo_col = ['SEQN', 'RIDAGEYR', 'RIDRETH3', 'DMDEDUC2', 
+Demo_col = ['SEQN', 'RIDAGEYR', 'RIDRETH3', 'RIAGENDR', 'DMDEDUC2', 
            'DMDMARTL', 'RIDSTATR', 'SDMVPSU', 'SDMVSTRA', 
            'WTMEC2YR', 'WTINT2YR']
 
 Demo_unique_col = ['SEQN', 'RIDAGEYR', 'RIDRETH3', 'DMDEDUC2']
 
-Demo_variable = ["id", "age", "race", "education", 
+Demo_variable = ["id", "age", "race", "gender", "education", 
                  "marital_status", "exam_status", "psu", 
                  "stratum", "exam_weight", "interview_weight",
                  "cohort"]
